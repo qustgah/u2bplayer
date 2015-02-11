@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/rounded_corner" >
+   <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/firstline" >
+      
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:text="Video Title text"
+                android:singleLine="false"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-light" />
+            
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nestrelative" >
+                
+            <ImageView
+                android:id="@+id/video_thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true" />
+            
+            <ImageView
+                android:id="@+id/video_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                 android:layout_marginRight="12dp"
+                android:padding="10dp"
+                android:layout_below="@+id/video_thumbnail"
+                android:src="@drawable/share" />
+            
+         </RelativeLayout>
+         
+      </LinearLayout>
+
+        <TextView
+            android:id="@+id/video_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:lines="5"
+            android:autoText="true"
+            android:autoLink="web|email"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_below="@id/firstline"
+            android:fontFamily="sans-serif-light"
+            android:text="this is a sample description of the video item" />
+
+    </RelativeLayout>
+
+</FrameLayout>

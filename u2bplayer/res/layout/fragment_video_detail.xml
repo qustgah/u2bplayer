@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" 
+       android:background="#dcdcdc"
+       >
+       <RelativeLayout 
+           android:id="@+id/title"
+           android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/rounded_corner" 
+            >
+       <TextView 
+        android:layout_gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/video_title"
+        android:textSize="20sp"
+        android:textColor="#ab1111"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+       />
+
+     <TextView
+         android:id="@+id/video_publishAt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textStyle="bold|italic"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/video_title"
+        />
+
+     <TextView
+         android:id="@+id/video_viewCount"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/video_title"
+         android:textStyle="bold|italic"
+         android:layout_marginLeft="30dp"
+         android:layout_toRightOf="@+id/video_publishAt"
+       />
+      <TextView
+         android:id="@+id/video_description"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginTop="8dp"
+         android:layout_below="@+id/video_publishAt" 
+       />
+ </RelativeLayout> 
+   </RelativeLayout> 
+   </ScrollView>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55CDB5CD"
+    android:orientation="vertical"
+    android:id="@+id/ownercontainer" >
+    
+    <com.ijiaban.actionbar.pulltorefreshlib.PullToRefreshLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ownerlistfragment"
+        android:background="#f1f1f1" >
+          
+    <ProgressBar 
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/nexusprogress"
+        android:indeterminate="true"
+        android:layout_gravity="center" /> 
+           
+    <com.twotoasters.jazzylistview.JazzyListView
+        android:id="@+id/owner_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_weight="1" />
+      
+  </com.ijiaban.actionbar.pulltorefreshlib.PullToRefreshLayout>
+
+</LinearLayout>
